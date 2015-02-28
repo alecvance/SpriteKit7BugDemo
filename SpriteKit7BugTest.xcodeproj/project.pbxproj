@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		703D77AA1A9FEC840067735E /* Fighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 703D77A91A9FEC840067735E /* Fighter.m */; };
 		705FE0C61A9E7A4500340379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 705FE0C51A9E7A4500340379 /* main.m */; };
 		705FE0C91A9E7A4500340379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 705FE0C81A9E7A4500340379 /* AppDelegate.m */; };
 		705FE0CC1A9E7A4500340379 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 705FE0CB1A9E7A4500340379 /* GameScene.m */; };
@@ -16,6 +17,7 @@
 		705FE0D61A9E7A4500340379 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705FE0D51A9E7A4500340379 /* Images.xcassets */; };
 		705FE0D91A9E7A4500340379 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705FE0D71A9E7A4500340379 /* LaunchScreen.xib */; };
 		705FE0E51A9E7A4500340379 /* SpriteKit7BugTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 705FE0E41A9E7A4500340379 /* SpriteKit7BugTestTests.m */; };
+		705FE0F01A9E7FD500340379 /* Squadron.m in Sources */ = {isa = PBXBuildFile; fileRef = 705FE0EF1A9E7FD500340379 /* Squadron.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		703D77A81A9FEC840067735E /* Fighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fighter.h; sourceTree = "<group>"; };
+		703D77A91A9FEC840067735E /* Fighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fighter.m; sourceTree = "<group>"; };
 		705FE0C01A9E7A4500340379 /* SpriteKit7BugTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKit7BugTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		705FE0C41A9E7A4500340379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705FE0C51A9E7A4500340379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 		705FE0DE1A9E7A4500340379 /* SpriteKit7BugTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKit7BugTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		705FE0E31A9E7A4500340379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705FE0E41A9E7A4500340379 /* SpriteKit7BugTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKit7BugTestTests.m; sourceTree = "<group>"; };
+		705FE0EE1A9E7FD500340379 /* Squadron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Squadron.h; sourceTree = "<group>"; };
+		705FE0EF1A9E7FD500340379 /* Squadron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Squadron.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,11 +94,15 @@
 			children = (
 				705FE0C71A9E7A4500340379 /* AppDelegate.h */,
 				705FE0C81A9E7A4500340379 /* AppDelegate.m */,
-				705FE0CA1A9E7A4500340379 /* GameScene.h */,
-				705FE0CB1A9E7A4500340379 /* GameScene.m */,
-				705FE0CD1A9E7A4500340379 /* GameScene.sks */,
 				705FE0CF1A9E7A4500340379 /* GameViewController.h */,
 				705FE0D01A9E7A4500340379 /* GameViewController.m */,
+				705FE0CD1A9E7A4500340379 /* GameScene.sks */,
+				705FE0CA1A9E7A4500340379 /* GameScene.h */,
+				705FE0CB1A9E7A4500340379 /* GameScene.m */,
+				705FE0EE1A9E7FD500340379 /* Squadron.h */,
+				705FE0EF1A9E7FD500340379 /* Squadron.m */,
+				703D77A81A9FEC840067735E /* Fighter.h */,
+				703D77A91A9FEC840067735E /* Fighter.m */,
 				705FE0D21A9E7A4500340379 /* Main.storyboard */,
 				705FE0D51A9E7A4500340379 /* Images.xcassets */,
 				705FE0D71A9E7A4500340379 /* LaunchScreen.xib */,
@@ -228,6 +238,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705FE0F01A9E7FD500340379 /* Squadron.m in Sources */,
+				703D77AA1A9FEC840067735E /* Fighter.m in Sources */,
 				705FE0D11A9E7A4500340379 /* GameViewController.m in Sources */,
 				705FE0C91A9E7A4500340379 /* AppDelegate.m in Sources */,
 				705FE0CC1A9E7A4500340379 /* GameScene.m in Sources */,
@@ -356,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpriteKit7BugTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -366,6 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpriteKit7BugTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -424,6 +438,7 @@
 				705FE0EA1A9E7A4500340379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		705FE0EB1A9E7A4500340379 /* Build configuration list for PBXNativeTarget "SpriteKit7BugTestTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +447,7 @@
 				705FE0ED1A9E7A4500340379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

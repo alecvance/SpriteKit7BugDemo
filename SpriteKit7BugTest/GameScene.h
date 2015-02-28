@@ -8,6 +8,12 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface GameScene : SKScene
+@class Squadron;
 
+@interface GameScene : SKScene <SKPhysicsContactDelegate>
+
+@property int phase;
+@property NSTimeInterval phaseStartTime;
+@property CFTimeInterval lastUpdateTimeInterval;
+@property Squadron *squadron;
 @end
