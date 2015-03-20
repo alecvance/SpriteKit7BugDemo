@@ -1,7 +1,7 @@
 # SpriteKit7BugDemo
 Demonstrates an issue with Sprite Kit on iOS 7, and illustrates a possible workaround.
 
-IMPORTANT: Run this project in iOS 7.1, in either the simulator or a device. The problem does not exist in iOS 8.
+IMPORTANT: The current source code has the workaround. You will need to revert to the original version to see the bug in action. Run this project in iOS 7.1, in either the simulator or a device. The problem does not exist in iOS 8.
 
 
 I made the smallest project I could to demonstrate the problem. Here’s how it works, when you run the app (there is no interactivity):
