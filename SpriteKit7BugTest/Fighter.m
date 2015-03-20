@@ -15,6 +15,7 @@
     self = [super initWithImageNamed:@"Spaceship"];
     
     if(self){
+        self.name = @"fighter";
         self.position = position;
         self.xScale = 0.125;
         self.yScale = 0.125;
@@ -57,6 +58,7 @@
 
 
 -(void)rejoinSquadron{
+    self.queueToAddBack = NO; 
     [self removeFromParent];
     [self.squadron addChild: self];
     self.position = self.originalPosition;

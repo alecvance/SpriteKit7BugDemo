@@ -25,6 +25,7 @@ typedef enum : uint32_t {
 
 @property CGPoint originalPosition;
 @property (weak) Squadron *squadron;
+@property BOOL queueToAddBack; 
 
 -(id)initAtPosition:(CGPoint)position;
 -(void)configurePhysicsBody;

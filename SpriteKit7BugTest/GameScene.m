@@ -81,6 +81,7 @@
         // self.worldMovedForUpdate = YES;
     }
     
+    
     [self updateWithTimeSinceLastUpdate:timeSinceLast];
     
     
@@ -88,6 +89,13 @@
 
 #pragma mark - Loop Update
 - (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast {
+    
+    for( SKNode* node in self.children ) {
+        if( [node.name isEqualToString:@"fighter"] ) {
+            Fighter* fighter = (Fighter*)node;
+            if( fighter.queueToAddBack ) [fighter rejoinSquadron];
+        }
+    }
     
     //moving to timer
     if([[NSDate date] timeIntervalSinceReferenceDate] - self.phaseStartTime > 4){

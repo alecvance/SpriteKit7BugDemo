@@ -51,7 +51,8 @@
 
 #pragma mark - Loop Update
 - (void)nextFighterAttacks {
-        Fighter *ship = [self.children objectAtIndex:0];
+    // Added strong reference, but it doesn't seem to be needed.
+        Fighter __strong *ship = [self.children objectAtIndex:0];
     
     CGPoint newPos = [self positionInSceneForNode: ship];
     
@@ -61,7 +62,18 @@
     
     [ship runAction: [SKAction sequence:@[[SKAction moveToY:40.0 duration:10.0],
                                           [SKAction runBlock:^(void){
-        [ship rejoinSquadron];
+        //[ship rejoinSquadron];
+
+        NSLog(@"%s -1- ship.physicsBody=%@ ship.scene=%@",__PRETTY_FUNCTION__,ship.physicsBody,ship.scene);
+
+        NSLog(@"[NSThread isMainThread]? %@",[NSThread isMainThread]?@"yes":@"no");
+//        [ship removeFromParent];
+//        [self addChild: ship];
+//        ship.position = ship.originalPosition;
+        ship.queueToAddBack = YES;
+        
+        NSLog(@"%s -2- ship.physicsBody=%@ ship.scene=%@",__PRETTY_FUNCTION__,ship.physicsBody,ship.scene);
+        
     }]]]];
   }
 
